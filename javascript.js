@@ -10,13 +10,11 @@ var messages = [
   'You have an amazing potential inside of you',
   'You are great',
   'Don\'t judge a book by it\'s cover, if you get what I am saying',
-  var len = messages.length
-  Math.floor(Math.random()*len);
+
 ]
-
-
-
-
+var len = messages.length
+let idx = Math.floor(Math.random()*len);
+alert(messages[idx])
 }
 function introduceMe() {
    alert( 'My name is Pranav Bhookya')
