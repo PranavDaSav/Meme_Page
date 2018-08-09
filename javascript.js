@@ -1,21 +1,44 @@
-function Messages()  {
-  // make  alist of messages
-  // figure out how to access elements from the list
-  // how to generate random number
-  // how to get random element from list js
-  // remember to get snowy
-var messages = [
-  'Have a great day',
-  'You are amazing',
-  'You have an amazing potential inside of you',
-  'You are great',
-  'Don\'t judge a book by it\'s cover, if you get what I am saying',
+//clicking animal pic should alert the page
+//with "The Cat Says Moo"
 
-]
-var len = messages.length
-let idx = Math.floor(Math.random()*len);
-alert(messages[idx])
-}
-function introduceMe() {
-   alert( 'My name is Pranav Bhookya')
-}
+var animal = document.getElementById('animalPic');
+//alert('animal.innerHTML');
+
+animal.onclick = function() {
+  var animalSounds = [
+    'moo',
+    'meow',
+    'quack',
+    'tweet tweet',
+    'woof'
+  ];
+
+var beginningOfPhrase = 'The cat says ';
+var sound;
+
+var randomIndex = Math.floor( Math.random() * animalSounds.length)
+sound = animalSounds[randomIndex]
+
+ alert(beginningOfPhrase + sound);
+};
+
+
+var dogePic = document.getElementById('dogePic');
+//alert('animal.innerHTML');
+
+dogePic.onclick = function() {
+  var animalSounds = [
+    'moo',
+    'meow',
+    'quack',
+    'tweet tweet',
+    'woof'
+  ];
+var beginningOfPhrase = 'The doge says ';
+var sound;
+
+var randomIndex = Math.floor( Math.random() * animalSounds.length)
+sound = animalSounds[randomIndex]
+
+ alert(beginningOfPhrase + sound);
+};
